@@ -6,7 +6,17 @@ var $ = require('gulp-load-plugins')();
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
 
-gulp.task('styles', function () {
+gulp.task('sass', function () {
+  gulp.src('app/styles/sass/*.scss')
+   .pipe($.sass({
+      outputStyle: 'compressed', // libsass doesn't support expanded yet
+      precision: 5,
+      onError: console.error.bind(console, 'Sass error:')
+    }))
+    .pipe(gulp.dest('app/styles/'));
+});
+
+gulp.task('styles',['sass'], function () {
   return gulp.src('app/styles/main.css')
     .pipe($.sourcemaps.init())
     .pipe($.postcss([
@@ -112,6 +122,8 @@ gulp.task('serve', ['twig','styles', 'fonts'], function () {
     '.tmp/*.html'
   ]).on('change', reload);
 
+    
+  gulp.watch('app/styles/sass/*.scss', ['sass']);
   gulp.watch('app/templates/*', ['twig']);
   gulp.watch('app/styles/**/*.css', ['styles']);
   gulp.watch('app/fonts/**/*', ['fonts']);
@@ -122,6 +134,12 @@ gulp.task('serve', ['twig','styles', 'fonts'], function () {
 gulp.task('wiredep', function () {
   var wiredep = require('wiredep').stream;
 
+gulp.src('app/styles/sass/*.scss')
+    .pipe(wiredep({
+      ignorePath: /^(\.\.\/)+/
+    }))
+    .pipe(gulp.dest('app/styles'));    
+    
   gulp.src('app/*.html')
     .pipe(wiredep({
       ignorePath: /^(\.\.\/)*\.\./
@@ -130,11 +148,9 @@ gulp.task('wiredep', function () {
 });
 
 //'jshint removed for not checking dependencies',
-gulp.task('build', [ 'twig','html','images','icons', 'fonts', 'extras'], function () {
+gulp.task('build', ['html','images','icons', 'fonts', 'extras'], function () {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
-
-
 
 gulp.task('default', ['clean'], function () {
   gulp.start('build');
