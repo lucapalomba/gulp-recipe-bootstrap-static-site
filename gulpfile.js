@@ -148,7 +148,7 @@ gulp.src('app/styles/sass/*.scss')
 });
 
 //'jshint removed for not checking dependencies',
-gulp.task('build', ['html','images','icons', 'fonts', 'extras'], function () {
+gulp.task('build', ['jshint','html','images','icons', 'fonts', 'extras'], function () {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 
