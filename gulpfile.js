@@ -3,8 +3,8 @@
 // generated on 2015-05-05 using generator-gulp-webapp 0.3.0
 var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
-var browserSync = require('browser-sync');
-var reload = browserSync.reload;
+var browserSync = require('browser-sync').create();
+var reload      = browserSync.reload;
 
 gulp.task('sass', function () {
   gulp.src('app/styles/sass/*.scss')
@@ -13,11 +13,13 @@ gulp.task('sass', function () {
       precision: 5,
       onError: console.error.bind(console, 'Sass error:')
     }))
-    .pipe(gulp.dest('app/styles/'));
+    .pipe(gulp.dest('app/styles/'))
+    .pipe(gulp.dest('.tmp/styles'))
+    .pipe(reload({stream: true}));
 });
 
 gulp.task('styles',['sass'], function () {
-  return gulp.src('app/styles/main.css')
+  return gulp.src('app/styles/*.css')
     .pipe($.sourcemaps.init())
     .pipe($.postcss([
       require('autoprefixer-core')({browsers: ['last 1 version']})
@@ -101,10 +103,10 @@ gulp.task('extras', function () {
 
 gulp.task('clean', require('del').bind(null, ['.tmp', 'dist']));
 
-gulp.task('serve', ['twig','styles', 'fonts'], function () {
-  browserSync({
-    notify: false,
-    port: 9000,
+gulp.task('serve', ['twig','styles','fonts'], function () {
+    
+  browserSync.init({
+    notify: true,
     server: {
       baseDir: ['.tmp', 'app'],
       routes: {
@@ -115,16 +117,14 @@ gulp.task('serve', ['twig','styles', 'fonts'], function () {
 
   // watch for changes
   gulp.watch([
-    'app/*.html',
+ 'app/*.html',
     'app/scripts/**/*.js',
     'app/images/**/*',
-    '.tmp/fonts/**/*',
-    '.tmp/*.html'
-  ]).on('change', reload);
+    '.tmp/fonts/**/*'
+  ]).on('change',  browserSync.reload);
 
-    
   gulp.watch('app/styles/sass/*.scss', ['sass']);
-  gulp.watch('app/templates/*', ['twig']);
+  gulp.watch('app/templates/**/*', ['twig']);
   gulp.watch('app/styles/**/*.css', ['styles']);
   gulp.watch('app/fonts/**/*', ['fonts']);
   gulp.watch('bower.json', ['wiredep', 'fonts']);

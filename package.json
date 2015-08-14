@@ -6,7 +6,7 @@
   "devDependencies": {
     "bower":"^1.4.1",
     "autoprefixer-core": "^4.0.2",
-    "browser-sync": "^1.8.2",
+    "browser-sync": "^2.8.2",
     "del": "^1.1.1",
     "gulp": "^3.6.0",
     "gulp-cache": "^0.2.2",
