@@ -13,7 +13,6 @@ gulp.task('sass', function () {
       precision: 5,
       onError: console.error.bind(console, 'Sass error:')
     }))
-    .pipe(gulp.dest('app/styles/'))
     .pipe(gulp.dest('.tmp/styles'))
     .pipe(browserSync.stream());
 });
@@ -25,7 +24,6 @@ gulp.task('styles',['sass'], function () {
       require('autoprefixer-core')({browsers: ['last 1 version']})
     ]))
     .pipe($.sourcemaps.write())
-   .pipe(gulp.dest('app/styles/'))
     .pipe(gulp.dest('.tmp/styles'))
     .pipe(browserSync.stream());
 });
