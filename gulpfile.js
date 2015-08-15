@@ -43,10 +43,10 @@ gulp.task('twig', function () {
         .pipe(twig({
             data: {
                 title: 'Gulp and Twig',
-            }
+            },
+            errorLogToConsole:true
         }))
-            .pipe(gulp.dest('.tmp/'))
-            .pipe(gulp.dest('app/'));
+        .pipe(gulp.dest('app/'));
 });
 
 gulp.task('html', ['twig','styles'], function () {
@@ -116,14 +116,14 @@ gulp.task('serve', ['twig','styles','fonts'], function () {
 
   // watch for changes
   gulp.watch([
-    'app/**/*.html',
+    'app/*.html',
     'app/scripts/**/*.js',
     'app/images/**/*',
     '.tmp/fonts/**/*'
   ]).on('change',  browserSync.reload);
 
   gulp.watch('app/styles/sass/*.scss', ['sass']);
-  gulp.watch('app/templates/**/*', ['twig']);
+  gulp.watch('app/templates/**/*.twig', ['twig']);
   gulp.watch('app/styles/**/*.css', ['styles']);
   gulp.watch('app/fonts/**/*', ['fonts']);
   gulp.watch('bower.json', ['wiredep', 'fonts']);
