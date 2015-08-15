@@ -15,7 +15,7 @@ gulp.task('sass', function () {
     }))
     .pipe(gulp.dest('app/styles/'))
     .pipe(gulp.dest('.tmp/styles'))
-    //.pipe(browserSync.stream());
+    .pipe(browserSync.stream());
 });
 
 gulp.task('styles',['sass'], function () {
@@ -25,8 +25,9 @@ gulp.task('styles',['sass'], function () {
       require('autoprefixer-core')({browsers: ['last 1 version']})
     ]))
     .pipe($.sourcemaps.write())
+   .pipe(gulp.dest('app/styles/'))
     .pipe(gulp.dest('.tmp/styles'))
-    .pipe(reload({stream: true}));
+    .pipe(browserSync.stream());
 });
 
 gulp.task('jshint', function () {
@@ -117,7 +118,7 @@ gulp.task('serve', ['twig','styles','fonts'], function () {
 
   // watch for changes
   gulp.watch([
- 'app/*.html',
+    'app/**/*.html',
     'app/scripts/**/*.js',
     'app/images/**/*',
     '.tmp/fonts/**/*'
