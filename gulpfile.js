@@ -15,7 +15,7 @@ gulp.task('sass', function () {
     }))
     .pipe(gulp.dest('app/styles/'))
     .pipe(gulp.dest('.tmp/styles'))
-    .pipe(reload({stream: true}));
+    //.pipe(browserSync.stream());
 });
 
 gulp.task('styles',['sass'], function () {
