@@ -44,11 +44,14 @@ bower install
 How to run:
 =======
 
- * gulp serve
-    Run this project in the browser.
+ * Run this project in the browser.
+  ```
+gulp serve
+```
 
- * gulp 
- 
-   Generate in the */dist* folder your complete version
+ * Generate in the */dist* folder your complete version
+   ```
+gulp
+```
 
     
