@@ -5,6 +5,7 @@ var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
 var browserSync = require('browser-sync').create();
 var reload      = browserSync.reload;
+var sitemap = require('gulp-sitemap');
 
 gulp.task('sass', function () {
   gulp.src('app/styles/sass/*.scss')
@@ -47,6 +48,14 @@ gulp.task('twig', function () {
             errorLogToConsole:true
         }))
         .pipe(gulp.dest('app/'));
+});
+
+gulp.task('sitemap', function () {
+    gulp.src('app/**/*.html')
+        .pipe(sitemap({
+            siteUrl: 'http://www.yoursite.com'
+        }))
+        .pipe(gulp.dest('dist'));
 });
 
 gulp.task('html', ['twig','styles'], function () {
@@ -147,7 +156,7 @@ gulp.src('app/styles/sass/*.scss')
 });
 
 //'jshint removed for not checking dependencies',
-gulp.task('build', ['jshint','html','images','icons', 'fonts', 'extras'], function () {
+gulp.task('build', ['jshint','html','images','icons', 'fonts', 'extras','sitemap'], function () {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 
