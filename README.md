@@ -6,7 +6,7 @@ Mission
 Create a simple **Task/Generator for static websites** without using any server side technologies or cache system.
 It can be usefull for Light/Small Business Developer for creating landing pages or multiple pages websites without using CMS.
 
-This system integrates also optimizer (minifying, img optimizer, ... ) in order to avoid you wasting your time looking for the best online tool, use it and then enter the results in your project.
+This system **integrates optimizer** (minifying, img optimizer, ... ) in order to avoid you wasting your time looking for the best online tool, use it and then enter the results in your project.
 
 briefly:
   * SPEED
@@ -24,23 +24,23 @@ TOC
 Specifications:
 =======
 
-This project include some platforms,libs and frameworks to **make you work faster**. 
+This project includes some platforms,libs and frameworks to **make you work faster**. 
 
 ## Bootstrap
-Bootstrap is usefull for creating simple UI in a **simple and fast way**.  
-It use most of common data UI structure ready out-of-the-box, well written and reliable. That's why I decide to put inside this project.
+Bootstrap is usefull for creating UI in a **simple and fast way**.  
+It uses most of common data UI structure ready out-of-the-box, well written and reliable. That's why I've decided to put inside this project.
 
-Use the official [knowlendge base](http://getbootstrap.com/) to understand how it works and how to use.
+Use the official [knowledge base](http://getbootstrap.com/) to understand how it works and how to use it.
 
 ##Twig
-Twig is a template engine who can use many abstraction layer and so permit to compile templates also with complex structure like, templating, inheritance, imports, data inections...
-It's usefully in a project like this because permits to have **many pages with the same structure** (generally header, footer, sidebars...)    
+Twig is a template engine who can use many abstraction layers and so allows you to compile templates also with complex structure like: templating, inheritance, imports, data injections...
+It's usefull in a project like this because allows to have **many pages with the same structure** (generally header, footer, sidebars...)    
 
 Take a look in the [Twig official repository](http://twig.sensiolabs.org/)
 
 ##SASS (or Scss)
 With Sass you can write CSS using cool functions like calculations, variables and hineritances melted up with a simple writing way.
-Sass permits to **save a large amout of time**, especially when you use complex templates or a personalized graphics.  
+Sass allows you to **save a large amount of time**, especially when you use complex templates or a personalized graphics.  
 
 [Learn the base of Sass](http://sass-lang.com/guide)
 
