@@ -15,6 +15,9 @@ briefly:
 TOC
 =======
   [Specifications](https://github.com/lucapalomba/gulp-recipe-bootstrap-static-site#specs)  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Bootstrap](https://github.com/lucapalomba/gulp-recipe-bootstrap-static-site#bootstrap)  
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Twig](https://github.com/lucapalomba/gulp-recipe-bootstrap-static-site#twig)  
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[SASS](https://github.com/lucapalomba/gulp-recipe-bootstrap-static-site#sass-or-scss)  
   [What you need before install](https://github.com/lucapalomba/gulp-recipe-bootstrap-static-site#what-you-need-before-install)  
   [How to install](https://github.com/lucapalomba/gulp-recipe-bootstrap-static-site#how-to-install)  
   [How to Run](https://github.com/lucapalomba/gulp-recipe-bootstrap-static-site#how-to-run)
