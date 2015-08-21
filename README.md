@@ -1,5 +1,7 @@
 # gulp-recipe-bootstrap-static-site
 
+A simple Gulp Recipe for create and optimize landing pages or static websites
+
 Mission
 =======
 
@@ -20,7 +22,8 @@ TOC
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[SASS](https://github.com/lucapalomba/gulp-recipe-bootstrap-static-site#sass-or-scss)  
   [What you need before install](https://github.com/lucapalomba/gulp-recipe-bootstrap-static-site#what-you-need-before-install)  
   [How to install](https://github.com/lucapalomba/gulp-recipe-bootstrap-static-site#how-to-install)  
-  [How to Run](https://github.com/lucapalomba/gulp-recipe-bootstrap-static-site#how-to-run)
+  [How to Run](https://github.com/lucapalomba/gulp-recipe-bootstrap-static-site#how-to-run)  
+  
   [Question about this project](https://github.com/lucapalomba/gulp-recipe-bootstrap-static-site#question-about-this-project)
   
   
