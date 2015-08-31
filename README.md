@@ -22,7 +22,7 @@ TOC
       * [Twig](https://github.com/lucapalomba/gulp-recipe-bootstrap-static-site#twig)
       * [SASS](https://github.com/lucapalomba/gulp-recipe-bootstrap-static-site#sass-or-scss)
       * [Browser Syncronized](https://github.com/lucapalomba/gulp-recipe-bootstrap-static-site#browser-syncronized)  
-      * [Automatic sitemap generation](https://github.com/lucapalomba/automatic-sitemap-genearation)
+      * [Automatic sitemap generation](https://github.com/lucapalomba/automatic-sitemap-generation)
    *  [Optimizers](https://github.com/lucapalomba/optimizers)  
      * [Css optimizing](https://github.com/lucapalomba/css-optimizing)
       
