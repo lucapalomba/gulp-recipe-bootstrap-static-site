@@ -21,14 +21,18 @@ TOC
       * [Bootstrap](https://github.com/lucapalomba/gulp-recipe-bootstrap-static-site#bootstrap)
       * [Twig](https://github.com/lucapalomba/gulp-recipe-bootstrap-static-site#twig)
       * [SASS](https://github.com/lucapalomba/gulp-recipe-bootstrap-static-site#sass-or-scss)
-      * [Browser Syncronized](https://github.com/lucapalomba/gulp-recipe-bootstrap-static-site#browser-syncronized)
+      * [Browser Syncronized](https://github.com/lucapalomba/gulp-recipe-bootstrap-static-site#browser-syncronized)  
+      * [Automatic sitemap generation](https://github.com/lucapalomba/automatic-sitemap-genearation)
+   *  [Optimizers](https://github.com/lucapalomba/optimizers)  
+     * [Css optimizing](https://github.com/lucapalomba/css-optimizing)
       
   * [What you need before install](https://github.com/lucapalomba/gulp-recipe-bootstrap-static-site#what-you-need-before-install)
  
   * [How to install](https://github.com/lucapalomba/gulp-recipe-bootstrap-static-site#how-to-install)
   * [How to Run](https://github.com/lucapalomba/gulp-recipe-bootstrap-static-site#how-to-run)  
   
-  * [Question about this project](https://github.com/lucapalomba/gulp-recipe-bootstrap-static-site#question-about-this-project)
+  * [Question about this project](https://github.com/lucapalomba/gulp-recipe-bootstrap-static-site#question-about-this-project)  
+
   
   
   
@@ -62,14 +66,28 @@ Sass allows you to **save a large amount of time**, especially when you use comp
 [Learn the base of Sass](http://sass-lang.com/guide)
 
 ###Browser Syncronized
-After you start and run this project you can use the auto-sync or manual sync of browser-sync package. This package allow you to writing code on your IDE and see in real-time what happen to our html without reload the entire page.
+After you start and run this project you can use the auto-sync or manual sync of browser-sync package. This package allow you to writing code on your IDE and **see in real-time what happen to our html without reload** the entire page.
 
 [See for info and specs](http://www.browsersync.io/)
 
 ###Automatic sitemap generation
 
+Sitemaps are **mandatory for a correct Web development**. I've added an automatic sitemapper generator. This generator is triggered only with the distribuite version so you must use the  ```
+gulp``` command for create it. After that you can found your version in the */dist* folder ready to upload.
+
+[Here for how-to-customize ](https://github.com/pgilad/gulp-sitemap)
+
 
 ##Optimizers
+ 
+Where speeders is a set of frameworks for save your time and be more faster an conentrated on your front-end works, the optimizers are and incredible set of plugin for doing a very important phase of your work: **raise your quality level**.
+
+###Css optimizing
+
+Optimize your Css *makes your website faster*. This Recipe contain 4 strategy for doing this.
+
+
+
 
 What you need before install:
 =======
