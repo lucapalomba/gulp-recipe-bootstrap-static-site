@@ -84,7 +84,7 @@ Where speeders is a set of frameworks for save your time and be more faster an c
 
 ###Css optimizing
 
-Optimize your Css *makes your website faster*. This Recipe contain 4 strategy for doing this.
+Optimize your Css *makes your website faster*. This Recipe contain 4 strategies for doing this.
 
 
 
