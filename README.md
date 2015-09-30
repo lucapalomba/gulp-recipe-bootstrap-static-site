@@ -86,6 +86,30 @@ Where speeders is a set of frameworks for save your time and be more faster an c
 
 Optimize your Css *makes your website faster*. This Recipe contain 4 strategies for doing this.
 
+1. **Using SASS**:  
+Sass allow you to write al your CSS like an Object, with hierarchy and nesting and prorerties. That is very usefull because you can keep concentrated on your scheme, section division, front-end skills and don't spent time to thinking about class names and so on. An this is only an Example.  
+
+ [How to nest classes](http://sass-lang.com/guide#topic-3)
+
+
+2. **Compress CSS**  
+Your compress CSS is smaller than your normal CSS. Smaller in web become faster. In this project I used 2 strategies to do this. SASS compresser, and CSS Optimizer.  
+
+ [SASS Compresser options](https://github.com/dlmanning/gulp-sass)  
+ [CSSO, Css Optimizer](https://github.com/css/csso)
+
+
+3. **Autoprefixer**  
+Autoprefixer use the knowldgment about Browser diversification for adding classes to your Css specify class for Browser. Avoid headache!  
+
+ [Autoprefixer](https://github.com/postcss/autoprefixer)
+
+
+4. **Join CSS**  
+Cache systems think 1 Big Css is better than 100 small. Ok, you're in right.
+
+    
+
 
 
 
