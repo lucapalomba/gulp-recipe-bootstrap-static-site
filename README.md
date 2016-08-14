@@ -13,7 +13,7 @@ This system **integrates optimizer** (minifying, img optimizer, ... ) in order t
 briefly:
   * [SPEED]
   * [WEB OPTIMIZATION]
-  
+
 TOC
 =======
   * [Specifications](https://github.com/lucapalomba/gulp-recipe-bootstrap-static-site#specs)
@@ -25,17 +25,17 @@ TOC
       * [Automatic sitemap generation](https://github.com/lucapalomba/gulp-recipe-bootstrap-static-site#automatic-sitemap-generation)
    *  [Optimizers](https://github.com/lucapalomba/gulp-recipe-bootstrap-static-site#optimizers)  
      * [Css optimizing](https://github.com/lucapalomba/gulp-recipe-bootstrap-static-site#css-optimizing)
-      
+
   * [What you need before install](https://github.com/lucapalomba/gulp-recipe-bootstrap-static-site#what-you-need-before-install)
- 
+
   * [How to install](https://github.com/lucapalomba/gulp-recipe-bootstrap-static-site#how-to-install)
   * [How to Run](https://github.com/lucapalomba/gulp-recipe-bootstrap-static-site#how-to-run)  
-  
+
   * [Question about this project](https://github.com/lucapalomba/gulp-recipe-bootstrap-static-site#question-about-this-project)  
 
-  
-  
-  
+
+
+
 Specifications:
 =======
 
@@ -79,7 +79,7 @@ gulp``` command for create it. After that you can found your version in the */di
 
 
 ##Optimizers
- 
+
 Where speeders is a set of frameworks for save your time and be more faster an conentrated on your front-end works, the optimizers are and incredible set of plugin for doing a very important phase of your work: **raise your quality level**.
 
 ###Css optimizing
@@ -99,7 +99,7 @@ Your compress CSS is smaller than your normal CSS. Smaller in web become faster.
 Autoprefixer use the knowldgment about Browser diversification for adding classes to your Css specify class for Browser. Avoid headache!  
 
  [Autoprefixer](https://github.com/postcss/autoprefixer)
- 
+
 4. **CSS Concatenation**  
 Cache systems think 1 Big Css is better than 100 small. Ok, you're in right. You can use the Build System "UseRef" for concats more css in one.
 
@@ -107,7 +107,7 @@ Cache systems think 1 Big Css is better than 100 small. Ok, you're in right. You
 
 
 
-    
+
 
 
 
@@ -117,23 +117,23 @@ What you need before install:
 
   * Node.js  
   This project is runned like a Node.js apps so you must [install Node.js](https://nodejs.org/download/) before continue
-        
-        
+
+
   * Patience  
   This project was born like a personal project and not a commercial one. So what you see it may not be done as well as you could write in your own. I know. And it's true.
-  
+
 How to install:
 =======
 
  1. Clone locally this repo
- 
- 
+
+
  2. Install generator dependencies    
     ```
 npm install
 ```
-    
-    
+
+
  3. Install project dependencies
  ```
 bower install
@@ -154,7 +154,4 @@ gulp
 
 Question about this project:
 =======
-Contact me at [luca palomba - web developer](http://lucapalomba.it)
-
-
-    
+Contact me at [luca palomba - web developer](http://lucapalomba.wordpress.com)
